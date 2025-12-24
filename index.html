@@ -1,118 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faça do Seu Jeito | Fardamentos Personalizados</title>
-  <style>
-:root{
-  --primary:#1900ff;
-  --secondary:#1f2933;
-  --accent:#25D366;
-  --bg:#f6f7f9;
-}
-body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:#333}
-header{background:linear-gradient(135deg,var(--primary),#3f3cff);color:#fff;text-align:center;padding:0 20px 50px}
-header h1{margin:10px 0;font-size:2.4rem}
-header p{font-size:1.15rem;line-height:1.4}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:30px;text-decoration:none;font-weight:600;margin:8px;transition:.2s}
-.btn:hover{transform:translateY(-2px);opacity:.95}
-.btn-whats{background:var(--accent);color:#fff}
-.btn-insta{background:#E1306C;color:#fff}
-section{padding:60px 20px;max-width:1150px;margin:auto}
-section h2{text-align:center;font-size:2rem;color:var(--secondary)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
-.card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 10px 25px rgba(0,0,0,.08);text-align:center}
-.card h3{margin-top:0;color:var(--primary);font-size:1.3rem}
-.card p{line-height:1.5}
-.price{font-size:2rem;font-weight:700;margin:18px 0;color:var(--secondary)}
-footer{background:var(--secondary);color:#fff;text-align:center;padding:30px 15px}
-.carousel{width:100%;max-height:300px;overflow:hidden;position:relative}
-.carousel img{width:100%;height:300px;object-fit:cover;display:none}
-.carousel img.active{display:block}
-.icon{font-size:2rem;margin-bottom:10px}
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="Faça do Seu Jeito" style="max-width:180px; margin:20px 0 15px;" />
-  <div class="carousel">
-    <img src="banner1.jpg" class="active" />
-    <img src="banner2.jpg" />
-    <img src="banner3.jpg" />
+  <div class="header-top">
+    <img src="img/logo.png" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="kits.html">Kits</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </div>
-  
-  <h1>Faça do Seu Jeito</h1>
-  <p><strong>Sua empresa mais profissional, organizada e reconhecida.</strong><br>Fardamentos personalizados para empresas locais, com qualidade e entrega rápida.</p>
-  <a class="btn btn-whats" href="https://wa.me/559992145575" target="_blank">📲 Pedir pelo WhatsApp</a>
-  <a class="btn btn-whats" style="background:#128C7E" href="https://wa.me/559992145575?text=Olá!%20Quero%20um%20orçamento%20rápido%20de%20fardamento" target="_blank">⚡ Orçamento Rápido</a>
-  <a class="btn btn-insta" href="https://instagram.com/fseujeito" target="_blank">📸 Instagram</a>
+
 </header>
 
-<section>
-  <h2>👕 Camisas Personalizadas que Valorizam Sua Marca</h2><p style="text-align:center; max-width:800px; margin:10px auto 30px;">Uniformes não são gasto, são <strong>investimento na imagem da sua empresa</strong>. Escolha a quantidade ideal e receba suas camisas prontas para uso.</p>
-  <div class="grid">
-    <div class="card">
-      <h3>1 a 2 unidades</h3>
-      <div class="price">R$ 40 / un</div>
-      <a class="btn btn-whats" href="https://wa.me/559992145575?text=Quero%20camisas%20personalizadas%20(1%20a%202%20unidades)" target="_blank">Pedir agora</a>
+<section class="hero-carousel">
+  <div class="carousel hero" aria-roledescription="carousel">
+    <div class="carousel-window">
+      <div class="carousel-track">
+        <div class="carousel-item" style="background-image:url('img/banner1.jpg')">
+          <div class="hero-content">
+            <h1>Uniformes que valorizam sua empresa</h1>
+            <p>Camisas, bonés, canecas e fardamentos personalizados para empresas locais.</p>
+            <a class="btn btn-whats" href="https://wa.me/559992145575">📲 Orçamento no WhatsApp</a>
+            <a class="btn btn-outline" href="produtos.html">Ver Produtos</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('img/banner2.jpg')">
+          <div class="hero-content">
+            <h1>Personalize seus fardamentos</h1>
+            <p>Identidade visual de qualidade para sua equipe.</p>
+            <a class="btn btn-whats" href="https://wa.me/559992145575">📲 Orçamento</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('img/banner3.jpg')">
+          <div class="hero-content">
+            <h1>Brindes corporativos</h1>
+            <p>Canecas, bonés e muito mais para sua marca.</p>
+            <a class="btn btn-whats" href="https://wa.me/559992145575">📲 Orçamento</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image:url('img/banner4.jpg')">
+          <div class="hero-content">
+            <h1>Promoções especiais</h1>
+            <p>Descontos para pedidos em pequena e grande escala.</p>
+            <a class="btn btn-whats" href="https://wa.me/559992145575">📲 Orçamento</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <h3>3 a 5 unidades</h3>
-      <div class="price">R$ 37 / un</div>
-      <a class="btn btn-whats" href="https://wa.me/559992145575?text=Quero%20camisas%20personalizadas%20(3%20a%205%20unidades)" target="_blank">Pedir agora</a>
-    </div>
-    <div class="card">
-      <h3>6 a 9 unidades</h3>
-      <div class="price">R$ 35 / un</div>
-      <a class="btn btn-whats" href="https://wa.me/559992145575?text=Quero%20camisas%20personalizadas%20(6%20a%209%20unidades)" target="_blank">Pedir agora</a>
-    </div>
-    <div class="card">
-      <h3>10 ou mais</h3>
-      <div class="price">R$ 33 / un</div>
-      <a class="btn btn-whats" href="https://wa.me/559992145575?text=Quero%20camisas%20personalizadas%20(10%20ou%20mais)" target="_blank">Pedir agora</a>
-    </div>
+    <button class="carousel-btn prev" aria-label="Voltar">‹</button>
+    <button class="carousel-btn next" aria-label="Avançar">›</button>
+    <div class="carousel-dots"></div>
   </div>
 </section>
 
 <section>
-  <h2>🔥 Kits de Fardamento Prontos para Empresas</h2><p style="text-align:center; max-width:800px; margin:10px auto 30px;">Pacotes pensados para facilitar sua decisão, economizar e deixar sua equipe padronizada desde o primeiro dia.</p>
+  <h2>🛍️ Produtos Personalizados</h2>
   <div class="grid">
     <div class="card">
-      <h3>Kit Empresa Essencial</h3>
-      <p>✔ 5 camisas personalizadas</p>
-      <div class="price">R$ 175</div>
-      <a class="btn btn-whats" href="https://wa.me/559992145575?text=Quero%20o%20Kit%20Empresa%20Essencial" target="_blank">Quero esse kit</a>
+      <img src="assets/img/camisa.jpg">
+      <h3>Camisas</h3>
+      <p>Profissionais, confortáveis e duráveis.</p>
     </div>
     <div class="card">
-      <h3>Kit Empresa Completo</h3>
-      <p>✔ 5 camisas + 5 bonés</p>
-      <div class="price">R$ 375</div>
-      <a class="btn btn-whats" href="https://wa.me/559992145575?text=Quero%20o%20Kit%20Empresa%20Completo" target="_blank">Quero esse kit</a>
+      <img src="assets/img/bone.jpg">
+      <h3>Bonés</h3>
+      <p>Identidade visual forte para sua marca.</p>
     </div>
     <div class="card">
-      <h3>Kit Empresa Premium</h3>
-      <p>✔ 10 camisas + 10 bonés</p>
-      <div class="price">R$ 700</div>
-      <a class="btn btn-whats" href="https://wa.me/559992145575?text=Quero%20o%20Kit%20Empresa%20Premium" target="_blank">Quero esse kit</a>
+      <img src="assets/img/caneca.jpg">
+      <h3>Canecas</h3>
+      <p>Brindes e uso corporativo.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section>
+  <h2>💬 O que dizem nossos clientes</h2>
+  <div class="grid">
+    <div class="card testimonial">
+      “Depois dos uniformes, nossa empresa passou muito mais credibilidade.”
+    </div>
+    <div class="card testimonial">
+      “Atendimento rápido e qualidade excelente.”
+    </div>
+    <div class="card testimonial">
+      “Virou nosso fornecedor fixo.”
     </div>
   </div>
 </section>
 
 <footer>
-  <p><strong>Faça do Seu Jeito</strong> – Especialista em fardamentos personalizados</p>
-  <p>Atendimento local • Qualidade profissional • Orçamento rápido no WhatsApp</p>
+  <p><strong>Faça do Seu Jeito</strong></p>
+  <p>📲 WhatsApp: 99 9 9214-5575</p>
 </footer>
 
 <script>
-  const slides = document.querySelectorAll('.carousel img');
+// Carrossel simples: slide + botões + navegação por dots + autoplay
+(function(){
+  const track = document.querySelector('.carousel-track');
+  const items = Array.from(document.querySelectorAll('.carousel-item'));
+  const prev = document.querySelector('.carousel-btn.prev');
+  const next = document.querySelector('.carousel-btn.next');
+  const dotsContainer = document.querySelector('.carousel-dots');
   let index = 0;
-  setInterval(() => {
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-  }, 4000);
+  let interval = null;
+  const AUTOPLAY_MS = 4000;
+
+  function createDots(){
+    items.forEach((_, i)=>{
+      const d = document.createElement('button');
+      d.className = 'dot';
+      d.setAttribute('aria-label', 'Ir para slide ' + (i+1));
+      d.addEventListener('click', ()=>{ goTo(i); resetAutoplay(); });
+      dotsContainer.appendChild(d);
+    });
+    updateDots();
+  }
+
+  function update(){
+    if(!track) return;
+    track.style.transform = `translateX(-${index*100}%)`;
+    updateDots();
+  }
+
+  function updateDots(){
+    const dots = Array.from(dotsContainer.children);
+    dots.forEach((d, i)=> d.classList.toggle('active', i===index));
+  }
+
+  function prevSlide(){ index = (index-1+items.length)%items.length; update(); }
+  function nextSlide(){ index = (index+1)%items.length; update(); }
+  function goTo(i){ index = i%items.length; update(); }
+
+  if(prev) prev.addEventListener('click', ()=>{ prevSlide(); resetAutoplay(); });
+  if(next) next.addEventListener('click', ()=>{ nextSlide(); resetAutoplay(); });
+
+  function startAutoplay(){
+    interval = setInterval(()=>{ nextSlide(); }, AUTOPLAY_MS);
+  }
+  function stopAutoplay(){ clearInterval(interval); interval = null; }
+  function resetAutoplay(){ stopAutoplay(); startAutoplay(); }
+
+  const carousel = document.querySelector('.carousel');
+  if(carousel){
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+  }
+
+  // suporte a teclado (setas esquerda/direita)
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'ArrowLeft'){ prevSlide(); resetAutoplay(); }
+    if(e.key === 'ArrowRight'){ nextSlide(); resetAutoplay(); }
+  });
+
+  // Inicialização
+  if(items.length){
+    createDots();
+    update();
+    startAutoplay();
+  }
+})();
 </script>
+
 </body>
 </html>
